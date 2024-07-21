@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
+    <title>Eventos DOM</title>
     <style>
         body{
             background-color: rgb(107, 161, 189);
-            color:white;
+            font: 16px normal arial;
         }
         div{
-            background-color: violet;
+            background-color: green;
+            color: white;
             height: 200px;
             width: 200px;
             line-height: 200px;
             text-align: center;
+            cursor: pointer;
         }
 
     </style>
 </head>
 <body>
-    <div>
-        Clique aqui
+    <div id="area">
+        Interaja....
     </div>
+
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicou)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+
+        function clicou(){
+            a.style.backgroundColor='red'
+            a.innerText='Clicou!'
+        }
+        function entrou(){
+            a.innerText='Entrou!'
+        }
+        function saiu(){
+            a.innerText='Saiu!'
+            a.style.backgroundColor='green'
+        }
+
+    </script>
 </body>
 </html>
