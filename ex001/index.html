@@ -39,12 +39,12 @@
     <script>
         hora = new Date().getHours()
         console.log(hora)
-        i = window.getElementById('imagem')
-        p1 = window.getElementById('horinha')
+        var i = window.getElementById('imagem')
+        var p1 = window.getElementById('horinha')
         p1.innerText += ` ${hora} Horas.`
 
         if (hora > 12){
-            i.src ='imagens/sol.jpg'
+             p1='imagens/sol.jpg'
             
         }
         
