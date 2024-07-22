@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <style>
+        *{
+            margin: 10;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: blue;
+            text-align: center;
+        }
+
+        div{
+            font-size: 1.5em;
+            width: 500px;
+            padding: 20px;
+            margin: auto;
+            border-radius: 20px;
+            background-color: lightblue;
+        }
+        div img{
+            width: 200px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hora do Dia</h1>
+    <div>
+        <p id="horinha">Agora são</p>
+        <img src="imagens/lua.jpg" alt="" id="imagem">
+    </div>
+    <p>&copy;2024 Site feito por Otávio Santiago</p>
+    <script>
+        hora = new Date().getHours()
+        console.log(hora)
+        i = window.getElementById('imagem')
+        p1 = window.getElementById('horinha')
+        p1.innerText += ` ${hora} Horas.`
+
+        if (hora > 12){
+            i.src ='imagens/sol.jpg'
+            
+        }
+        
+        
+    </script>
+</body>
+</html>
