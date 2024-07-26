@@ -33,11 +33,15 @@ input[type=button], input[type=reset]{
     border-radius: 5px;
 }
 
-#imagem{
+#res p{
+    padding-bottom: 10px;
+    display: block;
+}
+
+#foto{
     width: 150px;
     height: 150px;
     background-color: black;
-    /* background-image: url(imagens/homem/H-crianca.jpg); */
     background-size: contain;
     background-position: center center;
     margin: auto;
