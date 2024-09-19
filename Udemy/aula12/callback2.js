@@ -11,5 +11,5 @@ for (let i in notas) {
 console.log(notasBaixas)
 
 // Com Callback
-notasBaixas = notas.filter( a => a < 7)
+notasBaixas = notas.filter(a => a < 7)
 console.log(notasBaixas)
